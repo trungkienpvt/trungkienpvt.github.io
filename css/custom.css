@@ -111,6 +111,18 @@ img, iframe {
         width: 1260px;
     }
 }
-.success#portfolio{
-    padding:0px 0 ;
+
+
+#map{
+	width:500px;
+	height:300px;
+}
+.map-wrapper{
+width:500px;
+height:300px;
+color:black;
+}
+.row.map-wrapper{
+	margin-right: -15px;
+	margin-left: 0px;
 }

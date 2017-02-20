@@ -183,7 +183,14 @@
                 </div>
 
             </div>
+
+            <div class="row map-wrapper">
+                <div id="map" class="col-md-6"></div>
+            </div>
+
         </div>
+
+
     </section>
 
     <!-- Footer -->
@@ -459,10 +466,14 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLM6vAtHLu_SgqOtrAZvLSBoQUfILmPLI"></script>
+
+
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -477,6 +488,18 @@
     </script>
     <!--End of Tawk.to Script-->
 
+
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        var icon = new google.maps.MarkerImage("http://maps.google.com/mapfiles/ms/micons/blue.png",
+                new google.maps.Size(32, 32), new google.maps.Point(0, 0),
+                new google.maps.Point(16, 32));
+        var center = null;
+        var map = null;
+        var currentPopup;
+        var bounds = new google.maps.LatLngBounds();
+        customModule.users.google_map.initMap(false);
+    </script>
 </body>
 
 </html>
